@@ -10,7 +10,7 @@ export default function FeatureGrid(){
       {/* 网页模块  */}
       <Link to="/websites" className="group relative overflow-hidden glass-panel bg-surface-container-high/60 p-8 rounded-lg transition-all duration-500 hover:bg-surface-container-highest/80 hover:scale-[1.02] cursor-pointer">
         <div className="absolute top-0 right-0 p-4">
-          <span class="material-symbols-outlined text-primary-fixed/30 group-hover:text-primary-fixed transition-colors">language</span>
+          <span className="material-symbols-outlined text-primary-fixed/30 group-hover:text-primary-fixed transition-colors">language</span>
         </div>
         <div className="mb-12">
           <div className="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-sm mb-4 border border-primary/20 group-hover:border-primary transition-all duration-500">
@@ -65,30 +65,32 @@ export default function FeatureGrid(){
         <div className="absolute bottom-0 left-0 h-1 w-0 bg-secondary group-hover:w-full transition-all duration-700 ease-out"></div>
       </Link>
       
-      {/* 待定模块  */}
-      <div className="group relative overflow-hidden glass-panel bg-surface-container-low/30 p-8 rounded-lg transition-all duration-500 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 cursor-not-allowed">
+      {/* 收藏模块  */}
+      <Link to="/collections" className="group relative overflow-hidden glass-panel bg-surface-container-high/60 p-8 rounded-lg transition-all duration-500 hover:bg-surface-container-highest/80 hover:scale-[1.02] cursor-pointer">
         <div className="absolute top-0 right-0 p-4">
-          <span className="material-symbols-outlined text-outline/30">lock</span>
+          <span className="material-symbols-outlined text-tertiary/30 group-hover:text-tertiary transition-colors">extension</span>
         </div>
         <div className="mb-12">
-          <div className="w-12 h-12 flex items-center justify-center bg-outline/10 rounded-sm mb-4 border border-outline/20">
-            <span className="material-symbols-outlined text-outline">hourglass_empty</span>
+          <div className="w-12 h-12 flex items-center justify-center bg-tertiary/10 rounded-sm mb-4 border border-tertiary/20 group-hover:border-tertiary transition-all duration-500">
+            <span className="material-symbols-outlined text-tertiary">build</span>
           </div>
           <h3 className="font-headline text-2xl font-bold tracking-tight text-on-surface mb-2">
-            待定
+            收藏模块
           </h3>
           <p className="font-body text-sm text-on-surface-variant leading-relaxed">
-            待定: 即将开展新的内容模块
+            收藏: 收集日常使用的高效工具及趣味应用.
           </p>
         </div>
         <div className="flex items-center justify-between">
-          <span className="font-label text-[10px] text-outline tracking-widest uppercase">
-            03 // 待定
+          <span className="font-label text-[10px] text-tertiary tracking-widest uppercase">
+            03 // 工具箱
           </span>
-          <span className="material-symbols-outlined text-sm text-outline">sensors</span>
+          <span className="material-symbols-outlined text-sm text-tertiary animate-pulse">
+            arrow_forward
+          </span>
         </div>
-        <div className="absolute bottom-0 left-0 h-1 w-0 bg-outline group-hover:w-full transition-all duration-700 ease-out"></div>
-      </div>
+        <div className="absolute bottom-0 left-0 h-1 w-0 bg-tertiary group-hover:w-full transition-all duration-700 ease-out"></div>
+      </Link>
     </div>
   )
 }

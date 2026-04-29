@@ -1,0 +1,6 @@
+title: 2048小游戏
+description: 网页端2048游戏实现，使用Canvas绘制
+files:
+  - name: App.jsx
+    path: demo/App.jsx
+    description: 主组件 - 游戏逻辑

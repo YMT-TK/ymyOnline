@@ -1,0 +1,14 @@
+tools:
+  - id: AI Create
+    title: AI Create
+    description: 管理AI大模型及历史生成记录
+    category: 软件
+    tags: [AI, 工具]
+    createdAt: 2026-04-28
+
+  - id: 2048-game
+    title: 2048小游戏
+    description: 网页端2048游戏实现，使用Canvas绘制
+    category: 小游戏
+    tags: [Canvas, 游戏]
+    createdAt: 2026-04-25
