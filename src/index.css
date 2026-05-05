@@ -283,3 +283,179 @@
 ::-webkit-scrollbar-track { background: #0d0e13; }
 ::-webkit-scrollbar-thumb { background: #1e1f26; border-radius: 10px; }
 ::-webkit-scrollbar-thumb:hover { background: #8ff5ff; }
+
+/* Markdown Styles */
+.markdown-body {
+  font-family: var(--font-body);
+  color: var(--color-on-surface);
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-family: var(--font-headline);
+  font-weight: bold;
+  margin: 1.5em 0 0.5em 0;
+  color: var(--color-on-surface);
+}
+
+.markdown-body h1 { font-size: 2.5rem; margin-top: 0; }
+.markdown-body h2 { font-size: 1.75rem; padding-bottom: 0.3em; border-bottom: 1px solid var(--color-outline-variant); }
+.markdown-body h3 { font-size: 1.25rem; }
+.markdown-body h4 { font-size: 1.1rem; }
+
+.markdown-body p {
+  margin: 1em 0;
+  color: var(--color-on-surface-variant);
+}
+
+.markdown-body a {
+  color: var(--color-primary-fixed);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.markdown-body a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.markdown-body code {
+  background: var(--color-surface-container-low);
+  color: var(--color-primary-fixed);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.9em;
+}
+
+.markdown-body pre {
+  background: var(--color-surface-container-low);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  border: 1px solid var(--color-outline-variant);
+  margin: 1em 0;
+}
+
+.markdown-body pre code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid var(--color-primary-fixed);
+  padding-left: 1rem;
+  color: var(--color-on-surface-variant);
+  margin: 1em 0;
+  background: var(--color-surface-container-low);
+  padding: 1rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+  margin: 1em 0;
+}
+
+.markdown-body li {
+  margin: 0.5em 0;
+  color: var(--color-on-surface-variant);
+}
+
+.markdown-body li::marker {
+  color: var(--color-primary-fixed);
+}
+
+.markdown-body img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1em 0;
+}
+
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+.markdown-body th,
+.markdown-body td {
+  border: 1px solid var(--color-outline-variant);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.markdown-body th {
+  background: var(--color-surface-container-low);
+  font-family: var(--font-headline);
+  font-weight: 600;
+}
+
+.markdown-body tr:nth-child(even) {
+  background: var(--color-surface-container-low);
+}
+
+.markdown-body hr {
+  border: none;
+  border-top: 1px solid var(--color-outline-variant);
+  margin: 2em 0;
+}
+
+/* 代码高亮主题覆盖 */
+.markdown-body pre .hljs {
+  background: transparent;
+}
+
+/* Task list (GitHub Flavored Markdown) */
+.markdown-body input[type="checkbox"] {
+  margin-right: 0.5em;
+  accent-color: var(--color-primary-fixed);
+}
+
+/* 骨架屏动画 */
+@keyframes skeleton-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+.skeleton-pulse {
+  animation: skeleton-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes loading-dots {
+  0%, 80%, 100% { transform: scale(0.6); opacity: 0.5; }
+  40% { transform: scale(1); opacity: 1; }
+}
+
+.loading-dot {
+  animation: loading-dots 1.2s ease-in-out infinite;
+}
+
+.loading-dot:nth-child(1) { animation-delay: 0s; }
+.loading-dot:nth-child(2) { animation-delay: 0.2s; }
+.loading-dot:nth-child(3) { animation-delay: 0.4s; }
+
+/* 渐入动画 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out;
+}

@@ -1,0 +1,5 @@
+title: AgentCreate
+description: 管理AI大模型及历史生成记录
+type: repository
+repoUrl: https://github.com/YMT-TK/ToolCollection/tree/main/application/AgentCreate
+readmeUrl: https://raw.githubusercontent.com/YMT-TK/ToolCollection/main/application/AgentCreate/README.md
